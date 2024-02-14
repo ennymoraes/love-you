@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quer Namorar Comigo?</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="giphy.gif" alt="GIF" class="gif">
+            <p class="message">Quer namorar comigo? (sim, de novo porque eu te amo)</p>
+            <div class="button-group">
+                <button class="btn-yes" onclick="showPopup()">Sim</button>
+                <button class="btn-no" onclick="showSorryMessage()">Não</button>
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay" onclick="hidePopup()">
+        <div class="popup">
+            <p class="message">Happy Valentine's, I love you. Forever.</p>
+            <img src="myworld.jpg" alt="Imagem" class="popup-image">
+            <p class="author">Com amor, enny.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

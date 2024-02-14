@@ -1,0 +1,111 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #add8e6; /* azul bebê */
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  width: 350px; /* aumentando a largura do recadinho */
+  min-height: 250px; /* ajustando a altura mínima */
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: relative; /* Adicionamos position relative para a carta */
+}
+
+.message {
+  font-size: 18px;
+  color: #ff69b4; /* rosa */
+  margin-bottom: 20px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-yes,
+.btn-no {
+  flex: 1;
+  padding: 10px 20px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  margin: 0 5px; /* espaço entre os botões e a borda */
+}
+
+.btn-yes {
+  background-color: #ff69b4; /* rosa */
+  color: #fff;
+}
+
+.btn-no {
+  background-color: #ff6969; /* vermelho */
+  color: #fff;
+}
+
+.btn-yes:hover,
+.btn-no:hover {
+  background-color: #ff1493; /* rosa mais escuro */
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+.popup {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-image {
+  max-width: 100%; /* Limita a largura da imagem ao tamanho do recado */
+  max-height: 150px; /* Limita a altura máxima da imagem */
+  margin-bottom: 10px; /* Adiciona um espaço entre a imagem e a frase */
+}
+
+.author {
+  font-size: 14px;
+  color: #999;
+  margin-top: 10px;
+}
+
+.gif {
+  width: 100px; /* ajuste conforme necessário */
+  height: auto; /* manter proporção */
+  margin: 20px auto; /* centralizar horizontalmente com um espaço superior */
+  display: block; /* garantir que o margin funcione corretamente */
+}
